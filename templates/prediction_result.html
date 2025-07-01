@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CREDIT CARD DEFAULTER PREDICTION - Result</title>
+    </head>
+
+    <body>
+        <h2>Result</h2>
+
+        <!-- Display prediction result (if available) -->
+        {% if prediction_result %}
+            <h3>Prediction Result:</h3>
+            <p>{{ prediction_result }}</p>
+        {% else %}
+            <p>No prediction result available.</p>
+        {% endif %}
+
+        <!-- Add a link to redirect back to the home page -->
+        <p><a href="{{ url_for('home') }}">Go back to Home</a></p>
+    </body>
+</html>

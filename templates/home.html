@@ -1,0 +1,20 @@
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CREDIT CARD DEFAULTER PREDICTION </title>
+    </head>
+
+    <body>
+        <h2>CREDIT CARD DEFAULT PREDICTOR</h2>
+        <p>provide the input file in csv format </p>
+        
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <div class="input-group">
+                <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            </div>
+            <button type="submit">PREDICT</button>
+        </form>
+    </body>
+
+</html>
